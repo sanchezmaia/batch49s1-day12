@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>blog-detail</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.png" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link ms-4" aria-current="page" href="/blog">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-danger ms-4" href="/project">My Project</a>
+            </li>
+          </ul>
+          <div class="d-flex" role="search">
+            <a class="btn btn-danger" type="submit" href="/contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir dari navbar -->
+    <main>
+      <section class="blog-post">
+        <h1 class="title text-center ms-4 my-5"></h1>
+        <div class="banner text-center">
+          <h1>
+            {{title}}
+          </h1>
+          <img src="/img/foto1.jpg" alt="website" />
+          <div class="banner-text">
+            <div class="banner-duration my-4">
+              <h2>Duration</h2>
+              <p><i class="fa-regular fa-calendar-days"></i> 08 Juni 2023 - 10 August 2023</p>
+              <p><i class="fa-solid fa-clock"></i> 2 months</p>
+            </div>
+            <div class="banner-techno">
+              <h2>Technologies</h2>
+              <table>
+                <tr>
+                  <td><i class="fa-brands fa-react"></i> ReactJS</td>
+                  <td><i class="fa-brands fa-square-js"></i> JavaScript</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-brands fa-node-js"></i> NodeJS</td>
+                  <td><i class="fa-brands fa-html5"></i> HTML</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="blog-post-content my-5 ms-4">
+          <p style="text-align: justify">
+            {{content}}
+            <br />
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
